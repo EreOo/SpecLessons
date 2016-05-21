@@ -123,8 +123,47 @@ while (y != 11){
 	y++;
 }
 
+
 //выпадающий список
 document.write("<select name =d>");
 for (var i = 1; i < 21; i++)
 	document.write("<option value =" +i+ ">" + i);
 	document.write("</select>");
+
+//таблица
+  var COLS = 10, ROWS = 10, i, j;
+	document.write("<table border = 1>");
+	for (i = 1 ; i < ROWS; i++){
+		document.write("<tr>");
+		for(j = 1; j < COLS; j++){
+		if((i*j)%2)
+		document.write("<td style = 'background: #ff9'>");
+		else
+		document.write("<td>");
+		document.write(i*j);
+			document.write("</td>");
+	}
+}
+	//document.write("</table>");
+
+
+	//do while - цикл - если надо, что бы хоть один раз сделать что - то
+
+	// rgb(10,130,76);
+	// rgb(230,230,76);
+
+	//за 10 шагов построить переход от одного цвета к другому
+
+//r1 + i * ((r2 - r1) / s)
+
+  var  r1 = 10, g1 = 130, b1 = 76;
+  var r2 = 230, g2 = 230, b2 =76;
+	var s = 10, i = 0, rgb = "", r, g, b;
+
+	for (i = 0; i <=s; i++ ) {
+		r = Math.round(r1 + i * (r2 - r1) / s);
+		g = Math.round(g1 + i * (g2 - g1) / s);
+		b = Math.round(b1 + i * (b2 - b1) / s);
+		rgb = "rgb(" + r + "," + g + "," + b + ")";
+		document.write("<div style='height:10px; background:" + rgb + "'></div>");
+	}
