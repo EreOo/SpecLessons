@@ -9,7 +9,7 @@ r = 5.2;
 V = h * r * r * Math.PI / 3;
 
 console.log("V = " + V );
-console.log("Random = " + (Math.random() * 8));
+console.log("Random = " + (Math.round((Math.random()  * (134 - 50) + 50) )));
 
 var S = 1e7, //kredit
 n = 20, //time year
@@ -158,7 +158,7 @@ for (var i = 1; i < 21; i++)
 
   var  r1 = 10, g1 = 130, b1 = 76;
   var r2 = 230, g2 = 230, b2 =76;
-	var s = 10, i = 0, rgb = "", r, g, b;
+	var s = 24, i = 0, rgb = "", r, g, b;
 
 	for (i = 0; i <=s; i++ ) {
 		r = Math.round(r1 + i * (r2 - r1) / s);
