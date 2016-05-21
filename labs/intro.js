@@ -101,17 +101,30 @@ console.log(day + " " + menu);
 
 var i = 1;
 
-while( i <= 20)
-{
-// от 1 до 20
-	console.log(i);
+// while( i <= 20)
+// {
+// // от 1 до 20
+// 	console.log(i);
+//
+// //нечетные
+//    if(i%2 != 0){
+// 		 console.log("Нечетнеы " + i);
+// 	 }
+// //квадраты
+// 	 console.log("Sqrt " + Math.sqrt(i));
+//
+// 	i++;
+// }
 
-//нечетные
-   if(i%2 != 0){
-		 console.log("Нечетнеы " + i);
-	 }
-//квадраты
-	 console.log("Sqrt " + Math.sqrt(i));
 
-	i++;
+var y = 1;
+while (y != 11){
+	console.log(8 * y);
+	y++;
 }
+
+//выпадающий список
+document.write("<select name =d>");
+for (var i = 1; i < 21; i++)
+	document.write("<option value =" +i+ ">" + i);
+	document.write("</select>");
