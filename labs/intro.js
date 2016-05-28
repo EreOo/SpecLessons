@@ -167,3 +167,16 @@ for (var i = 1; i < 21; i++)
 		rgb = "rgb(" + r + "," + g + "," + b + ")";
 		document.write("<div style='height:10px; background:" + rgb + "'></div>");
 	}
+
+	var o = 0, s = 1;
+   console.log( o);
+	for(var i = 0; i < 5; i++){
+
+		o = s + o;
+		console.log( o);
+		s = o + s;
+
+		console.log( s);
+
+	}
+	console.log("Фабаначи* = "+ s);
