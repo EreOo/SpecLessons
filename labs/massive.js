@@ -41,3 +41,12 @@ wr(a);
 function sortN(x, y){
   return x - y;
 }
+
+a.pop();
+wr(a);
+
+a.shift();
+wr(a);
+
+a.unshift(777);
+wr(a);
