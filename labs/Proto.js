@@ -52,3 +52,39 @@ console.log(car instanceof TruckCar);
 
 car.show();
 truck.show();
+
+
+
+/*
+*конструктор книги
+*@attr String title
+*@attr int pubYear
+*@attr float price
+*/
+function Book(title,pubYear,price){
+  this.title = title;
+  this.pubYear = pubYear;
+  this.price = price;
+}
+
+Book.prototype.show = function show(){
+  console.log(this.title + "\n" + this.price);
+}
+
+var book = new Book("Martin Iden", 2016, 180);
+
+book.show();
+
+//LAB
+
+function Dictionary(userList){
+
+for(var p in userList){
+  this[p] = userList[p];
+}
+
+  }
+
+
+console.log(Dictionary.set('Vladimir', 'Admin'));
+console.log(Dictionary.get('Vladimir'));
